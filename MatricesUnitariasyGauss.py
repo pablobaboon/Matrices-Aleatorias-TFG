@@ -349,26 +349,4 @@ plt.title('Ley de Wigner de autovalores contiguos')
 plt.show()
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
