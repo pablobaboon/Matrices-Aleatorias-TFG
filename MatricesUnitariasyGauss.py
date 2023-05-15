@@ -73,8 +73,7 @@ plt.hist(a,bins=90,color='green') #Unas 275 bins para una matriz de 10000, 90 bi
 plt.plot(x,y,color='red')
 plt.title('Densidad de Autovalores para 10000x10000. Ley del semicirculo')
 plt.show()
-#Hasta aquí hemos representado la ley del semicirculo de Wigner. Pero los resultados no son optimos, es mejor trabajar con el
-#unfolding. Para ello,trabajamos con la densidad acumulada de autovalores, que usaremos como variable del unfolding. 
+#Hasta aquí hemos representado la ley del semicirculo de Wigner. Pero los resultados no son optimos. Trabajamos con la densidad acumulada de autovalores, que usaremos como variable del unfolding. 
 from math import asin
 adagga=sorted(a)
 eind=adagga[len(adagga)-1]
@@ -129,8 +128,7 @@ edagga=sorted(e)
 #print(edagga)
 #print(len(edagga))
 #Antes de plotear nada, tenemos que encontrar el numero de bins. Ploteemos el numero de autovalores, que hay 1000.
-#Tenemos que ver que intervalo nos conviene elegir. Los autovalores van desde -44 a 44 aproximadamente, por lo que 
-#nos inventarmeos la movie. #Para la ley de wigner 
+#Tenemos que ver que intervalo nos conviene elegir. Los autovalores van desde -44 a 44 aproximadamente. #Para la ley de wigner 
 x=np.linspace(edagga[1],edagga[len(edagga)-1],1000000)
 y=(1/pi)*sqrt(2*N-x**2)
 plt.hist(edagga,bins=90,color='green') #Unas 275 bins para una matriz de 10000, 90 bins para una de 1000
