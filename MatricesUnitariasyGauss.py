@@ -311,7 +311,7 @@ plt.show()
 #Veamos el analisis para el caso unitario, ahora que tenemos el caso ortogonal
 
 N=1000;  L=30
-e2,s2=PabloUNIT(0,1,N,L)
+e2,s2=PabloUNIT(0,1/sqrt(2),N,L)
 x=np.linspace(e[0],e[len(e)-1],10000)
 y=(1/pi)*sqrt(2*N-x**2)
 plt.hist(e,bins=3450,color='green') #Unas 275 bins para una matriz de 10000, 90 bins para una de 1000
