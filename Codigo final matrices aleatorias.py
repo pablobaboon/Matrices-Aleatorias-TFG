@@ -167,7 +167,7 @@ def PabloUNIT(mu,sigma,N,L):  #N es la dimensión de la matriz, y L la longitud 
 
 
 N=1000;  L=1; #N es la dimensión de la matriz, y L la cantidad de matrices de la muestra que se escogen
-e,s,eta=PabloORTO(0,1,N,L)
+e,s=PabloORTO(0,1,N,L)
 x=np.linspace(e[0],e[len(e)-1],100)
 y=(1/(N*pi))*sqrt(2*N-x**2)
 
